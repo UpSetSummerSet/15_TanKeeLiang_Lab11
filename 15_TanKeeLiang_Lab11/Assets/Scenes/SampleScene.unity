@@ -608,7 +608,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthText: {fileID: 1055495132}
   health: 100
-  damageRate: 5
+  damageRate: 20
 --- !u!54 &1358148818
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -770,7 +770,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 10cbfe82161262d469bf0c48b25589a3, type: 2}
+  - {fileID: 2100000, guid: acc4214be9ccc6744a800902c28f4e5f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

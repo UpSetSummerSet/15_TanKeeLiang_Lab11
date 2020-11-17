@@ -82,15 +82,18 @@ public class PlayerController15 : MonoBehaviour
     }*/
     private void OnTriggerStay(Collider other)
     {
-        if(other.gameObject.tag == "Fire")
+        if(IsDead == false)
         {
-            health -= damageRate * Time.deltaTime;
-            healthText.GetComponent<Text>().text = "Health: " + health.ToString("0");
-        }
-        if(health <= 0)
-        {
-            playerAnim.SetTrigger("trigDeath");
-            IsDead = true;
+            if (other.gameObject.tag == "Fire")
+            {
+                health -= damageRate * Time.deltaTime;
+                healthText.GetComponent<Text>().text = "Health: " + health.ToString("0");
+            }
+            if (health <= 0)
+            {
+                playerAnim.SetTrigger("trigDeath");
+                IsDead = true;
+            }
         }
     }
 }
